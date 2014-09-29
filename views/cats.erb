@@ -10,10 +10,15 @@
      <img src='/images/kitten<%= @cat_rating %>.jpg' width='600'>
     <% else %>
   <form action="/cats">
-  <img src='/images/kittycat.jpg' width='600'>
-  <h2>How much do you love cats? 1 = most, 4 = least</h2>
-    <input type="text" name="cat_rating">
+  <img src='/images/kittycat.jpg' width='400'>
+  <h2>How much do you love cats?</h2>
+  <div float='center'>
+    <input type="radio" name="cat_rating" value="1">A LOT<br>
+    <input type="radio" name="cat_rating" value="2">So much<br>
+    <input type="radio" name="cat_rating" value="3">I love them so much I want to die<br>
+    <input type="radio" name="cat_rating" value="4">I hate cats<br><br>
     <input type="submit" value="meow">
+  </div>
   </form>
   <% end %>
 </p>
