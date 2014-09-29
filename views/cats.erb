@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>"I love cats"</title>
+</head>
+<body align='center'>
+<p>
+  <h1>CATS ARE THE BEST ANIMALS EVER!!</h1>
+  <br>
+    <% if @cat_rating %>
+     <img src='/images/kitten<%= @cat_rating %>.jpg' width='600'>
+    <% else %>
+  <form action="/cats">
+  <img src='/images/kittycat.jpg' width='600'>
+  <h2>How much do you love cats? 1 = most, 4 = least</h2>
+    <input type="text" name="cat_rating">
+    <input type="submit" value="meow">
+  </form>
+  <% end %>
+</p>
+
+
+</body>
+
+</html>

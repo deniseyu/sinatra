@@ -2,6 +2,7 @@
 	<p><img src='/images/cutekitten.jpg'></p>
 	<% if @visitor %>
 		<h1>Hello <%= @visitor %>!</h1>
+    <h2><a href='/cats'>TAKE THE CAT RATINGS QUIZ!!!</a></h2>
 	<% else %>
     <form action="/hello">
       <h1>My name is <%= @catname %> and I'm a kitty cat. What's your name?</h1>
