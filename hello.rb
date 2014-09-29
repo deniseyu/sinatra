@@ -6,7 +6,7 @@ end
 
 get '/hello' do
 	@visitor = params[:name]
-	@catname = "Cat"
+	@catname = "Fluffy"
 	erb :index
 end
 
