@@ -1,0 +1,12 @@
+<div style='border: 3px dashed pink' align='center'>
+	<p><img src='http://bit.ly/1eze8aE'></p>
+	<% if @visitor %>
+		<h1>Hello <%= @visitor %>!</h1>
+	<% else %>
+    <form action="/hello">
+      <h1>My name is <%= @catname %>. What's your name?</h1>
+      <input type="text" name="name">
+      <input type="submit" value="hit me">
+    </form>
+	<% end %>
+</div>
